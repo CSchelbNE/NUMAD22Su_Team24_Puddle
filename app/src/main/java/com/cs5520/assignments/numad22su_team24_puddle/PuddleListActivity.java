@@ -403,7 +403,6 @@ public class PuddleListActivity extends AppCompatActivity implements View.OnClic
                 if (!FirebaseDB.getLocalUser().getProfile_icon().equals("")) {
                     Glide.with(getApplicationContext()).load(FirebaseDB.getLocalUser().getProfile_icon()).into(profileIcon);
                 }
-                userRef.removeEventListener(this);
             }
 
             @Override
